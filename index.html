@@ -15,17 +15,105 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
-    Home New Popular Trending Categories The Bright Future of Web 3.0? We dive
-    into the next evolution of the web that claims to put the power of the
-    platforms back into the hands of the people. But is it really fulfilling its
-    promise? Read more New Hydrogen VS Electric Cars Will hydrogen-fueled cars
-    ever catch up to EVs? The Downsides of AI Artistry What are the possible
-    adverse effects of on-demand AI image generation? Is VC Funding Drying Up?
-    Private funding by VC firms is down 50% YOY. We take a look at what that
-    means. 01 Reviving Retro PCs What happens when old PCs are given modern
-    upgrades? 02 Top 10 Laptops of 2022 Our best picks for various needs and
-    budgets. 03 The Growth of Gaming How the pandemic has sparked fresh
-    opportunities.
+    <main class="grid">
+      <header>
+        <div class="logo-container">
+          <img src="./assets/images/logo.svg" alt="" />
+        </div>
+        <div class="nav-icon">
+          <img src="./assets/images/icon-menu.svg" alt="Navigation" />
+        </div>
+        <dialog>
+          <nav class="mobile-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">New</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Trending</a></li>
+              <li><a href="#">Categories</a></li>
+            </ul>
+          </nav>
+        </dialog>
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="intro-section">
+        <div class="title-container">
+          <h1>The Bright Future of Web 3.0?</h1>
+        </div>
+        <div class="details-container">
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <a href="" class="btn">Read more</a>
+        </div>
+      </section>
+      <aside>
+        <h2>New</h2>
+        <ol>
+          <li>
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </li>
+          <li>
+            <h3>The Downsides of AI Artistry</h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </li>
+          <li>
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </li>
+        </ol>
+      </aside>
+      <section class="articles-section">
+        <article>
+          <div class="article__img">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="" />
+          </div>
+          <div class="article__content">
+            <h2>Reviving Retro picks</h2>
+            <p>What happens when old PCs are given modern upgrades?</p>
+            <div class="article-number">01</div>
+          </div>
+        </article>
+        <article>
+          <div class="article__img">
+            <img src="assets/images/image-top-laptops.jpg" alt="" />
+          </div>
+          <div class="article__content">
+            <h2>Top 10 Laptops of 2022</h2>
+            <p>Our best picks for various needs and budgets.</p>
+            <div class="article-number">02</div>
+          </div>
+        </article>
+        <article>
+          <div class="article__img">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="" />
+          </div>
+          <div class="article__content">
+            <h2>The Growth of Gaming</h2>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+            <div class="article-number">03</div>
+          </div>
+        </article>
+      </section>
+    </main>
+
     <script src="script.js"></script>
   </body>
 </html>
