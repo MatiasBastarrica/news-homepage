@@ -86,3 +86,15 @@ h3 {
 p {
   line-height: 1.5;
 }
+
+/* ### HEADER ### */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desktop-nav {
+  display: none;
+}
