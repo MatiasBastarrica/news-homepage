@@ -40,3 +40,21 @@ svg {
   max-width: 100%;
   display: block;
 }
+
+/* ### UTILITY CLASSES ### */
+
+.btn {
+  background-color: var(--soft-red);
+  color: var(--very-dark-blue);
+  padding: 0.8rem 1.8rem;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: var(--fw-800);
+  letter-spacing: 3px;
+}
+
+.text-accent {
+  color: var(--accent-clr, var(--soft-orange));
+  font-weight: var(--fw-700);
+}
