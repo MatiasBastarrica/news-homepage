@@ -36,7 +36,8 @@ header nav a {
 }
 
 img,
-svg {
+svg,
+picture {
   max-width: 100%;
   display: block;
 }
