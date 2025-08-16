@@ -158,6 +158,42 @@ aside {
   font-size: 0.875rem;
 }
 
+.nav-icon {
+  cursor: pointer;
+}
+
+/* ### DIALOG ### */
+
+.close-icon-container {
+  cursor: pointer;
+}
+
+dialog {
+  background-color: #fefdf9;
+  padding: 2rem 1.8rem;
+  height: 100vh;
+  width: 55%;
+  margin-inline-start: auto;
+  box-sizing: content-box;
+  border: none;
+}
+
+dialog::backdrop {
+  background-color: #2823356f;
+}
+
+dialog .close-icon-container {
+  display: grid;
+  justify-items: end;
+}
+
+dialog ul {
+  margin-top: 8rem;
+  display: grid;
+  gap: 2rem;
+  font-size: 1.325rem;
+}
+
 /* ### ASIDE ### */
 
 aside {
@@ -240,3 +276,44 @@ aside ol p {
   order: -1;
   font-size: 2.3rem;
 }
+
+/* ### MEDIA QUERIES ### */
+
+@media (min-width: 62.5em) {
+  /* # GRID # */
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "intro intro aside"
+      "intro intro aside"
+      "articles articles articles";
+    row-gap: 2.5rem;
+    column-gap: 1.5rem;
+  }
+
+  /* # INTRO SECTION # */
+  .intro-section {
+    grid-template-areas: "img img" "content content";
+  }
+
+  .intro__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* # ARTICLES SECTION # */
+
+  .articles-section {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+/* body {
+  display: grid;
+  justify-items: center;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 75%;
+} */
