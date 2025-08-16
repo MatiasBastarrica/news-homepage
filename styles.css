@@ -67,7 +67,7 @@ body {
   font-weight: var(--fw-400);
   background-color: var(--off-white);
   color: var(--dark-grayish-blue);
-  padding: 1rem;
+  padding: 1.8rem 1rem 5rem;
 }
 
 h1,
@@ -196,4 +196,47 @@ aside ol p {
   font-size: 0.935rem;
   line-height: 1.8;
   color: #cacbe0;
+}
+
+/* ### ARTICLES SECTION ### */
+
+.articles-section {
+  display: grid;
+  gap: 2rem;
+}
+
+.articles-section article {
+  --accent-clr: var(--soft-red);
+  display: flex;
+  gap: 1.5rem;
+}
+
+.articles-section .article__img {
+  flex-shrink: 0;
+  flex-basis: 115px;
+}
+
+.article__img img {
+  /* object-fit: contain; */
+}
+
+.articles-section .article__content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.articles-section h2 {
+  font-size: 1.2rem;
+}
+
+.articles-section p {
+  line-height: 1.6;
+}
+
+.article-number {
+  order: -1;
+  font-size: 2.3rem;
 }
