@@ -157,3 +157,43 @@ aside {
   margin-top: 1.5rem;
   font-size: 0.875rem;
 }
+
+/* ### ASIDE ### */
+
+aside {
+  background-color: var(--very-dark-blue);
+  padding: 1.6rem 1.3rem;
+}
+
+aside h2 {
+  font-size: 1.8rem;
+}
+
+aside ol {
+  /* margin-top: 2rem; */
+  list-style: none;
+}
+
+aside li {
+  padding-block: 2rem;
+}
+
+aside li:last-child {
+  padding-bottom: 0;
+}
+
+aside ol > * + * {
+  border-top: 1px solid var(--dark-grayish-blue);
+}
+
+aside ol h3 {
+  font-size: 1.3rem;
+  font-weight: var(--fw-700);
+}
+
+aside ol p {
+  margin-top: 0.8rem;
+  font-size: 0.935rem;
+  line-height: 1.8;
+  color: #cacbe0;
+}
