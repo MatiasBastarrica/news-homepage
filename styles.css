@@ -280,6 +280,18 @@ aside ol p {
 /* ### MEDIA QUERIES ### */
 
 @media (min-width: 62.5em) {
+  /* # GENERAL # */
+  main {
+    max-width: 80%;
+  }
+
+  body {
+    padding: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+
   /* # GRID # */
   .grid {
     display: grid;
@@ -290,6 +302,21 @@ aside ol p {
       "articles articles articles";
     row-gap: 2.5rem;
     column-gap: 1.5rem;
+  }
+
+  /* # HEADER # */
+
+  .nav-icon {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .desktop-nav ul {
+    display: flex;
+    gap: 1.8rem;
   }
 
   /* # INTRO SECTION # */
@@ -308,12 +335,3 @@ aside ol p {
     column-gap: 1.5rem;
   }
 }
-/* body {
-  display: grid;
-  justify-items: center;
-  min-height: 100vh;
-}
-
-main {
-  max-width: 75%;
-} */
