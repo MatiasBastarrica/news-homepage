@@ -47,7 +47,7 @@ picture {
 .btn {
   background-color: var(--soft-red);
   color: var(--very-dark-blue);
-  padding: 0.8rem 1.8rem;
+  padding: 1rem 2rem;
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -67,12 +67,14 @@ body {
   font-weight: var(--fw-400);
   background-color: var(--off-white);
   color: var(--dark-grayish-blue);
+  padding: 1rem;
 }
 
 h1,
 h2,
 h3 {
   line-height: 1.1;
+  font-weight: var(--fw-800);
 }
 
 h1,
@@ -105,6 +107,7 @@ header {
 .grid {
   display: grid;
   grid-template-areas: "header" "intro" "aside" "articles";
+  row-gap: 3rem;
 }
 
 header {
@@ -121,4 +124,36 @@ aside {
 
 .articles-section {
   grid-area: articles;
+}
+
+/* ### INTRO SECTION ### */
+
+.intro-section {
+  display: grid;
+  grid-template-areas: "img" "content";
+  gap: 1.5rem;
+}
+
+.intro__img {
+  grid-area: img;
+}
+
+.intro__content {
+  grid-area: content;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.intro-section h1 {
+  font-size: 2.235rem;
+  max-width: 10ch;
+}
+
+.details-container p {
+  font-size: 0.925rem;
+}
+
+.details-container a {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
 }
