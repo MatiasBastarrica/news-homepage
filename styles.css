@@ -98,6 +98,10 @@ header {
   justify-content: space-between;
 }
 
+header nav a:hover {
+  color: var(--soft-red);
+}
+
 .desktop-nav {
   display: none;
 }
@@ -156,6 +160,11 @@ aside {
 .details-container a {
   margin-top: 1.5rem;
   font-size: 0.875rem;
+}
+
+.details-container a:hover {
+  background-color: var(--very-dark-blue);
+  color: var(--off-white);
 }
 
 .nav-icon {
@@ -227,6 +236,15 @@ aside ol h3 {
   font-weight: var(--fw-700);
 }
 
+aside h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+aside ol h3 a:hover {
+  color: var(--soft-orange);
+}
+
 aside ol p {
   margin-top: 0.8rem;
   font-size: 0.935rem;
@@ -262,6 +280,15 @@ aside ol p {
 
 .articles-section h2 {
   font-size: 1.1rem;
+}
+
+.articles-section h2 a:hover {
+  color: var(--soft-red);
+}
+
+.articles-section h2 a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .articles-section p {
