@@ -262,6 +262,7 @@ aside ol p {
 .articles-section article {
   --accent-clr: var(--soft-red);
   display: flex;
+  align-items: center;
   gap: 1.5rem;
 }
 
@@ -295,6 +296,7 @@ aside ol p {
   line-height: 1.6;
   font-size: 0.9rem;
   text-wrap: balance;
+  max-width: 32ch;
 }
 
 .article-number {
@@ -304,7 +306,30 @@ aside ol p {
 
 /* ### MEDIA QUERIES ### */
 
-@media (min-width: 62.5em) {
+@media (min-width: 32.188em) {
+  /* # INTRO SECTION # */
+
+  .intro__content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+  }
+
+  /* # ARTICLES # */
+
+  article {
+    max-width: 369px;
+  }
+
+  article:nth-child(2) {
+    margin-inline: auto;
+  }
+
+  article:nth-child(3) {
+    margin-inline-start: auto;
+  }
+}
+
+@media (min-width: 43.75em) {
   /* # GENERAL # */
   main {
     max-width: 80%;
@@ -318,6 +343,19 @@ aside ol p {
   }
 
   /* # GRID # */
+
+  .grid {
+    grid-template-areas:
+      "header header"
+      "intro intro"
+      "articles aside";
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.8rem;
+  }
+}
+
+@media (min-width: 82.125em) {
+  /* # GRID # */
   .grid {
     display: grid;
     grid-template-areas:
@@ -326,7 +364,7 @@ aside ol p {
       "intro intro aside"
       "articles articles articles";
     row-gap: 2.5rem;
-    column-gap: 1.8rem;
+
     grid-template-columns: repeat(3, 1fr);
   }
 
