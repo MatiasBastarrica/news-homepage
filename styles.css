@@ -87,7 +87,7 @@ h3 {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 /* ### HEADER ### */
@@ -145,12 +145,12 @@ aside {
 }
 
 .intro-section h1 {
-  font-size: 2.235rem;
+  font-size: clamp(2.35rem, 2.1211rem + 0.9765vw, 3rem);
   max-width: 10ch;
 }
 
 .details-container p {
-  font-size: 0.925rem;
+  font-size: clamp(0.925rem, 0.8687rem + 0.2404vw, 1.085rem);
 }
 
 .details-container a {
@@ -249,11 +249,7 @@ aside ol p {
 
 .articles-section .article__img {
   flex-shrink: 0;
-  flex-basis: 115px;
-}
-
-.article__img img {
-  /* object-fit: contain; */
+  flex-basis: 100px;
 }
 
 .articles-section .article__content {
@@ -265,16 +261,18 @@ aside ol p {
 }
 
 .articles-section h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .articles-section p {
   line-height: 1.6;
+  font-size: 0.9rem;
+  text-wrap: balance;
 }
 
 .article-number {
   order: -1;
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 /* ### MEDIA QUERIES ### */
@@ -301,7 +299,8 @@ aside ol p {
       "intro intro aside"
       "articles articles articles";
     row-gap: 2.5rem;
-    column-gap: 1.5rem;
+    column-gap: 1.8rem;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /* # HEADER # */
@@ -316,7 +315,7 @@ aside ol p {
 
   .desktop-nav ul {
     display: flex;
-    gap: 1.8rem;
+    gap: 2.5rem;
   }
 
   /* # INTRO SECTION # */
@@ -326,6 +325,11 @@ aside ol p {
 
   .intro__content {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .intro-section h1 {
+    text-wrap: balance;
   }
 
   /* # ARTICLES SECTION # */
@@ -333,5 +337,9 @@ aside ol p {
   .articles-section {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.5rem;
+  }
+
+  .articles-section p {
+    text-wrap: auto;
   }
 }
