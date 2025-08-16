@@ -99,3 +99,26 @@ header {
 .desktop-nav {
   display: none;
 }
+
+/* ### GRID ### */
+
+.grid {
+  display: grid;
+  grid-template-areas: "header" "intro" "aside" "articles";
+}
+
+header {
+  grid-area: header;
+}
+
+.intro-section {
+  grid-area: intro;
+}
+
+aside {
+  grid-area: aside;
+}
+
+.articles-section {
+  grid-area: articles;
+}
